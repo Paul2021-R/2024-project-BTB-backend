@@ -8,7 +8,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import javax.sql.DataSource;
 
 @Configuration
-public class AppConfig {
+public class SQLiteConfig {
 
     @Value("${spring.datasource.url}")
     private String url;
