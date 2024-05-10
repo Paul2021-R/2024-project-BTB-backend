@@ -1,0 +1,33 @@
+spring:
+  profiles:
+    active: haryu-inner
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: haryu-inner
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: haryu-external
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+---
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+
+
+

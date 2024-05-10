@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:sqlite:./data/btb.db
+    driver-class-name: org.sqlite.JDBC
+    username: admin
+    password: admin
+
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate:
+      hbm2ddl:
+        auto: create-drop
+        show_sql: true
